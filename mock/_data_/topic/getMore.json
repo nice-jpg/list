@@ -1,0 +1,36 @@
+{
+  "errno": 0,
+  "errMsg": "",
+  "data": {
+    "topic_data": {
+      "id": 6290,
+      "title": "西安外事学院",
+      "link": "https://feed.baidu.com/feed/data/mdpage/mdpage?tag=8\u0026id=6452",
+      "tag_name": "西安外事学院",
+      "description": "",
+      "column_list": [],
+      "hot_type": 0,
+      "img_type": 1,
+      "img_url": "http://contentcms-bj.cdn.bcebos.com/cmspic/7946f245749719cb856d5fa8ed53a4c3.jpeg?x-bce-process=image/crop,x_0,y_0,w_1242,h_498",
+      "bjh_author_info": {
+        "author_num": 5,
+        "author_list": ["1606947823106078", "1664002977437909", "1576671927297598", "1615212203846258", "1607773569680696"],
+        "author_namelist": ["燃新闻视频", "三湘都市报", "摄近求远", "济南发布", "央广网"],
+        "author_imglist": ["http://pic.rmb.bdstatic.com/4fdd2814af10e5b6d549d4d3f9853295.png@c_1,w_721,h_721,x_62,y_40", "https://pic.rmb.bdstatic.com/bjh/user/c491821d49dd52686061af5c625ed610.png", "https://pic.rmb.bdstatic.com/43f67492429a0b14fd94fcc03e5426ba.jpeg", "https://pic.rmb.bdstatic.com/cd36dc5ec0bfa286c6b679e15f80e7c8.jpeg", "https://pic.rmb.bdstatic.com/62b7dfe97b813ad0909e833989133dae.jpeg"]
+      },
+      "topic_img_list": "{\"big_url\":{\"height\":210,\"width\":375,\"url\":\"http://contentcms-bj.cdn.bcebos.com/cmspic/7e7394a367795c00249362fc8967da4f.jpeg?x-bce-process=image/crop,x_0,y_0,w_375,h_210\"},\"small_url\":{\"height\":146,\"width\":218,\"url\":\"http://contentcms-bj.cdn.bcebos.com/cmspic/cc7ecf1b3f2a87ed887b5720640897eb.jpeg?x-bce-process=image/crop,x_0,y_0,w_218,h_146\"}}"
+    },
+    "column_news": [],
+    "h5_topbar_show": 1,
+    "is_box": 1,
+    "is_KanBox": 0,
+    "logid": "2998494146",
+    "ssid": [""],
+    "sortName": "topic",
+    "sortId": "8",
+    "is_android": false,
+    "version": "12.1.0.1",
+    "isLogin": 1,
+    "favorite": "{\"cmd\":{\"mode\":\"2\",\"url\":\"baiduboxapp://easybrowse?opentype=1\\u0026sfrom=feed\\u0026openurl=%7B%22switches%22%3A4%2C%22showtitlebar%22%3A0%2C%22showtoolbar%22%3A1%2C%22toolbaricons%22%3A%7B%22toolids%22%3A%5B%223%22%5D%7D%2C%22menuitem%22%3A%7B%7D%7D\\u0026isla=0\\u0026rbtnstyle=0\\u0026toolbaricons=2\\u0026menumode=%!s(MISSING)\"},\"img\":\"http://contentcms-bj.cdn.bcebos.com/cmspic/cc7ecf1b3f2a87ed887b5720640897eb.jpeg?x-bce-process=image/crop,x_0,y_0,w_218,h_146\",\"source\":\"\",\"tag\":\"\",\"title\":\"西安外事学院\",\"tplid\":\"image\",\"ukey\":\"baiduapp_zhuanti://6452\",\"url\":\"https://mbd.baidu.com/newspage/data/mdpage?tag=8\\u0026nightstate=1\\u0026id=6452\\u0026source=\"}"
+  }
+}

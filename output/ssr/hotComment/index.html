@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="shortcut icon" href="https://www.baidu.com/favicon.ico" type="image/x-icon">
+    <title>百度热议</title>
+    <script>
+        /* 性能打点用 */
+        window.SP = {
+            config: {pid: "", group: "", startPoint: "h5", dim: null, pname: "", sample: 1, resetConf: ""},
+            data: {startTime: +new Date(), common: {}, starts: {}, marks: {}, events: {}, keyMark: []},
+            now: Date.now ? Date.now : function () {
+                return (new Date).getTime()
+            },
+            start: function (t, n) {
+                return n = n || this.now(), this.data.starts[t] = n, this
+            },
+            mark: function (t, n) {
+                return n = n || this.now(), this.data.marks[t] = n, this
+            },
+            set: function (t, n) {
+                return void 0 !== n && (this.data.events[t] = n), this
+            },
+            resetConfig: function (t) {
+                this.config.resetConf = t
+            },
+            cal: function (key) {
+                var startTime = this.data.starts[key] ? this.data.starts[key] : this.data.startTime
+                return this.data.marks[key] - startTime;
+            }
+        }
+    </script>
+    <script>
+        window.SP && window.SP.mark('headStart');
+    </script>
+    <script>
+        /* spy-head */
+        !function (e, n) {
+            "object" == typeof exports && "undefined" != typeof module ? module.exports = n() : "function" == typeof define && define.amd ? define(n) : (e = e || self).__spyHead = n()
+        }(this, function () {
+            "use strict";
+            var T = {
+                conf: {}, winerrors: [], errorDestroy: function () {
+                }, observerDestroy: function () {
+                }, entryMap: {}, init: function (e) {
+                    this.conf = e
+                }, send: function (e, n) {
+                    e.type = e.type || "except";
+                    var r = this.conf;
+                    n = n || r.logServer;
+                    var o = "".concat(n, "?pid=").concat(r.pid, "&lid=").concat(r.lid, "&ts=").concat(Date.now()) + "&type=".concat(e.type, "&group=").concat(e.group, "&info=").concat(encodeURIComponent(JSON.stringify(e.info)));
+                    e.dim && (o += "&dim=" + encodeURIComponent(JSON.stringify(e.dim)));
+                    var t = new Image;
+                    t.src = o, t.onload = t.onerror = function () {
+                        t = null
+                    }
+                }
+            };
+
+            function n(e) {
+                var g = e.resourceError || {}, y = e.jsError || {}, w = Math.random() < (y.sample ? y.sample : 0),
+                    h = Math.random() < (g.sample ? g.sample : 0), E = T.winerrors;
+
+                function n(e) {
+                    try {
+                        var n = e.target, r = {info: {}, dim: {}, group: ""}, o = r.info, t = e.srcElement,
+                            i = navigator.connection || {};
+                        if (o.downlink = i.downlink, o.effectiveType = i.effectiveType, o.rtt = i.rtt, o.deviceMemory = navigator.deviceMemory || 0, o.hardwareConcurrency = navigator.hardwareConcurrency || 0, t === window) {
+                            r.group = y.group;
+                            var a = e.error || {};
+                            if (o.msg = e.message, o.file = e.filename, o.ln = e.lineno, o.col = e.colno, o.stack = (a.stack || "").split("\n").slice(0, 3).join("\n"), -1 !== o.msg.indexOf("MODULE_TIMEOUT")) {
+                                var c = o.msg.match(/^.*Hang:(.*); Miss:(.*)/);
+                                c && c[2] && (o.msg = "MODULE_TIMEOUT for miss:" + c[2])
+                            }
+                            for (var s = [], f = 0; f < T.winerrors.length; f++) {
+                                var u = T.winerrors[f], d = 1 < u.count ? "(".concat(u.count, ")") : "";
+                                s.push(d + u.msg)
+                            }
+                            o.hisErrors = s.join("----");
+                            var p = !0;
+                            y.handler && (p = y.handler(r)), !1 !== p && w && T.send(r)
+                        } else {
+                            r.group = g.group, r.dim.type = t.tagName.toLowerCase();
+                            var m = t.src || t.href;
+                            o.msg = m || "unknown load eror", n && "IMG" === n.tagName && (o.xpath = function (e) {
+                                for (var n = []; e && 1 === e.nodeType && e !== e.parentNode && (n.push(e.tagName.toLowerCase()), e !== document.body);) e = e.parentNode;
+                                return {xpath: n.join("<")}
+                            }(n).xpath);
+                            var l = !0;
+                            g.handler && (l = g.handler(r)), !1 !== l && h && T.send(r)
+                        }
+                        if (0 < E.length) {
+                            var v = E[E.length - 1];
+                            if (o.msg === v.msg) return void (v.count += v.count || 0)
+                        }
+                        E.push(o)
+                    } catch (e) {
+                        console.error(e)
+                    }
+                }
+
+                window.addEventListener("error", n, !0), T.errorDestroy = function () {
+                    window.removeEventListener("error", n, !0), T.winerrors = null
+                }
+            }
+
+            function r(e) {
+                var r = e.whiteScreenError || {}, o = r.handler, t = r.selector, i = r.subSelector,
+                    n = r.timeout || 6e3;
+                Math.random() < (r.sample ? r.sample : 0) && setTimeout(function () {
+                    var e = {
+                        group: r.group, info: {
+                            msg: "", netTime: function () {
+                                if (!window.performance) return !1;
+                                var e = window.performance.timing;
+                                return "&dns=".concat(e.domainLookupEnd - e.domainLookupStart) + "&tcp=".concat(e.connectEnd - e.connectStart) + "&requestTime=".concat(e.responseStart - e.requestStart) + "&resoneTime=".concat(e.responseEnd - e.responseStart)
+                            }(), hisErrors: function () {
+                                if (!T.winerrors) return !1;
+                                for (var e = T.winerrors, n = [], r = 0; r < e.length; r++) {
+                                    var o = (e[r].stack || "").split("\n")[0];
+                                    n.push("(".concat(r, ")").concat(o || e[r].msg))
+                                }
+                                return n.join(";;")
+                            }(), deviceInfo: function () {
+                                var e = {}, n = navigator.connection || {};
+                                return e.downlink = n.downlink, e.effectiveType = n.effectiveType, e.rtt = n.rtt, e.deviceMemory = navigator.deviceMemory || 0, e.hardwareConcurrency = navigator.hardwareConcurrency || 0, e
+                            }()
+                        }
+                    };
+                    if (function () {
+                        var e = document.querySelector(t);
+                        return !e || (!e.querySelector(i) || e.clientHeight < 2 * window.innerHeight / 3)
+                    }()) {
+                        e.info.msg = "WhiteScren Error";
+                        var n = !0;
+                        o && (n = o(e)), !1 !== n && e.info.msg && T && T.send(e)
+                    }
+                }, n)
+            }
+
+            return T.init = function (e) {
+                e.logServer || (e.logServer = "https://sp1.baidu.com/5b1ZeDe5KgQFm2e88IuM_a/mwb2.gif"), n(this.conf = e), function () {
+                    if (window.PerformanceObserver) {
+                        var e = new window.PerformanceObserver(function (e) {
+                            for (var n = T.entryMap, r = e.getEntries(), o = 0; o < r.length; o++) {
+                                var t = r[o];
+                                n[t.entryType] || (n[t.entryType] = []), n[t.entryType].push(t)
+                            }
+                        });
+                        T.observerDestroy = function () {
+                            e.disconnect()
+                        };
+                        try {
+                            e.observe({entryTypes: ["longtask", "layout-shift", "first-input", "largest-contentful-paint"]})
+                        } catch (e) {
+                        }
+                    }
+                }(), r(e)
+            }, window.__spyclientConf && T.init(window.__spyclientConf), T
+        });
+    </script>
+    <script>
+        /* spy-init */
+        window.__spyHead.init({
+            pid: '10_76',
+            lid: '',
+            jsError: {
+                group: 'hot_comment_js',
+                sample: 1
+            },
+            whiteScreenError: {
+                sample: 1,
+                group: 'hot_comment_white_screen',
+                selector: 'body',
+                subSelector: '#mainPage',
+                timeout: 3000
+            }
+        });
+    </script>
+    <script>
+        window.SP && window.SP.mark('headEnd');
+    </script>
+    <script>
+        try {
+            var ua = navigator.userAgent.toLocaleLowerCase();
+            var isBox = ua.match(/baiduboxapp/gi);
+            var isIos = ua.match(/iphone|ipod|ipad/i);
+            var isAndroid = ua.match(/android/i);
+            var isDarkMode = /bdbox_darkmode=dark/.test(window.location.search) || /(Theme\/dark|Theme%2fdark)/i.test(ua);
+            if (isDarkMode) {
+                document.documentElement.classList.add('darkmode');
+            }
+            if (isAndroid) {
+                document.documentElement.classList.add('android');
+            }
+            var fontSize = 'font-size-1';
+            if (window.easyBrowserNAInfoWhenPageInit && window.easyBrowserNAInfoWhenPageInit.fontSize) {
+                fontSize = window.easyBrowserNAInfoWhenPageInit.fontSize;
+            }
+            if (/tomas/i.test(ua)) {
+                document.documentElement.classList.add('tomas');
+                var version = /tomas\/([\d.]+)/.exec(ua)[1];
+                var versionCompare = function (v1, v2) {
+                    v1 = String(v1).split('.');
+                    v2 = String(v2).split('.');
+                    var len = Math.max(v1.length, v2.length);
+                    for (var i = 0; i < len; i++) {
+                        var n1 = parseInt(v1[i], 10) || 0;
+                        var n2 = parseInt(v2[i], 10) || 0;
+                        if (n1 > n2) {
+                            return 1;
+                        } else if (n1 < n2) {
+                            return -1;
+                        }
+                    }
+                    return 0;
+                };
+                if (versionCompare(version, '1.32') >= 0) {
+                    fontSize = 'font-size-3';
+                }
+            }
+            document.documentElement.classList.add(fontSize);
+        } catch (e) {
+            console.log(e);
+        }
+    </script>
+    <style>
+        html.android {
+            font-size: 90px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+</div>
+
+<script>
+    window.SP && window.SP.mark('contentEnd');
+</script>
+<script>
+    window.SP && window.SP.start('jsLoaded');
+</script>
+<script type="text/javascript" src="/hotComment/ssr.js"></script></body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "data_source": "scm://_-_PD_BL/",
+    "dest_dir": "./misdata/landing",
+    "md5sum": "",
+    "md5sum_file": "_-_PD_BL.md5",
+    "post_action": "reload tar multi-pages",
+    "pre_action": "",
+    "priority": 0,
+    "stop_if_failed_num": 1,
+    "warn_if_failed_num": 1,
+    "timestamp": "0",
+    "is_scm": true,
+    "self_attribute": {
+        "sub_module_icode_address": "baidu/feed3/multi-pages",
+        "contain_value_file": "false"
+    }
+}

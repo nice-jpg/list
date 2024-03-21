@@ -1,0 +1,153 @@
+{
+    "channel_cmd": "baiduboxapp://v11/appTab/select?item=home&upgrade=0&params=%7B%22channel%22%3A%22109999132%22%2C%22refresh%22%3A%221%22%2C%22tab_info%22%3A%7B%22id%22%3A%22109999132%22%2C%22name%22%3A%22%E9%87%8D%E5%BA%86%22%2C%22canDelete%22%3A%221%22%2C%22canDegrade%22%3A%220%22%2C%22canTTS%22%3A%220%22%7D%7D",
+    "header": {
+        "bg_image": "https://b.bdstatic.com/app/feedserver/tts/sdkvoice/6194f1faadc7f.png",
+        "bg_image_night": "https://b.bdstatic.com/app/feedserver/tts/sdkvoice/6194f1faadc7f.png"
+    },
+    "shared_icon": "http://t11.baidu.com/it/u=3401410149,143234385&fm=30&app=106&f=JPEG?w=657&h=370&s=D903AB554C7A780F5250057203002073",
+    "title": "重庆热搜榜",
+    "hot_list": [
+        {
+            "id": "news_10082916046628033971",
+            "title": "拉拽女乘客致衣不遮体，如此“带离车厢”欠一个解释",
+            "heat_value": 4990,
+            "landing_type": 0,
+            "image": "http://t11.baidu.com/it/u=3401410149,143234385&fm=30&app=106&f=JPEG?w=657&h=370&s=D903AB554C7A780F5250057203002073",
+            "show_tag": "热",
+            "title_prefix": "",
+            "duration": "",
+            "source": "中国青年报",
+            "link": "https://mbd.baidu.com/newspage/data/landingshare?context=%7B%22nid%22%3A%22news_10082916046628033971%22%2C%22sourceFrom%22%3A%22bjh%22%7D&pageType=1",
+            "cmd": "baiduboxapp://v1/browser/open?append=1&newwindow=0&upgrade=1&url=https%3A%2F%2Fm.baidu.com%2Fs%3Fsa%3Drecommend_big%26sfrom%3D1023524a%26topic_id%3D162453424118026831%26word%3D%2523%25E5%258F%25AA%25E6%259C%2589%25E4%25B8%2580%25E4%25B8%25AA%25E5%25A4%258F%25E5%25A4%25A9%25E5%25B1%259E%25E4%25BA%258E%25E6%25AF%2595%25E4%25B8%259A%25E5%25AD%25A3%2523"
+        },
+        {
+            "id": "dt_4904175663069941465",
+            "title": "老胡是在吃午饭时听到袁隆平先生去世的消息的。我知道我的这碗米饭与他的毕生努力有关，他以一己之力为让中国人吃饱肚子，也为世界减少饥饿做出了贡献。向他致敬。先生一路走好。",
+            "heat_value": 480128902,
+            "landing_type": 1,
+            "image": "http://t11.baidu.com/it/u=3401410149,143234385&fm=30&app=106&f=JPEG?w=657&h=370&s=D903AB554C7A780F5250057203002073",
+            "show_tag": "新",
+            "title_prefix": "",
+            "duration": "",
+            "source": "中国青年报",
+            "link": "https://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4904175663069941465&sourceFrom=pc_zhuanti",
+            "cmd": "baiduboxapp://v1/easybrowse/hybrid?append=1&ch_url=https%3A%2F%2Fmbd.baidu.com%2Fnewspage%2Fdata%2Fdtlandingreact%3FpageType%3D2%26nid%3Ddt_4904175663069941465%26sourceFrom%3Dfeed&commentInfo=%7B%22opentype%22%3A%222%22%2C%22source%22%3A%22star%22%2C%22topic_id%22%3A%221119000041349598%22%7D&context=%7B%22nid%22%3A%22dt_4904175663069941465%22%2C%22sourceFrom%22%3A%22feed%22%7D&first_image=http%3A%2F%2Ff12.baidu.com%2Fit%2Fu%3D3139091551%2C143234370%26fm%3D30%26app%3D106%26f%3DJPEG%3Fw%3D1242%26h%3D931%26s%3DD1133BD5062E75071850A47903000073%26access%3D215967316&newbrowser=1&style=%7B%22showtitlebar%22%3A%220%22%2C%22showtoolbar%22%3A%221%22%2C%22toolbaricons%22%3A%7B%22toolids%22%3A%5B%221%22%2C%222%22%2C%223%22%5D%7D%2C%22menumode%22%3A%222%22%2C%22menuitem%22%3A%7B%7D%7D&tpl_id=landing_app.html&upgrade=1"
+        },
+        {
+            "id": "topic_4519986921223693036",
+            "title": "只有一个夏天属于毕业季",
+            "heat_value": 4808902,
+            "landing_type": 3,
+            "image": "http://t11.baidu.com/it/u=1702425563,146450229&fm=30&app=106&f=JPEG?w=657&h=370&s=CD9036D244135FC41007D2410300C0DD",
+            "show_tag": "爆",
+            "title_prefix": "topic",
+            "duration": "",
+            "source": "度小糊",
+            "link": "https://m.baidu.com/s?sa=recommend_big&sfrom=1023524a&topic_id=162453424118026831&word=%23%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%A4%8F%E5%A4%A9%E5%B1%9E%E4%BA%8E%E6%AF%95%E4%B8%9A%E5%AD%A3%23",
+            "cmd": "baiduboxapp://v1/browser/open?append=1&newwindow=0&upgrade=1&url=https%3A%2F%2Fm.baidu.com%2Fs%3Fsa%3Drecommend_big%26sfrom%3D1023524a%26topic_id%3D162453424118026831%26word%3D%2523%25E5%258F%25AA%25E6%259C%2589%25E4%25B8%2580%25E4%25B8%25AA%25E5%25A4%258F%25E5%25A4%25A9%25E5%25B1%259E%25E4%25BA%258E%25E6%25AF%2595%25E4%25B8%259A%25E5%25AD%25A3%2523"
+        },
+        {
+            "id": "sv_6471767789255095065",
+            "title": "店面被淹，郑州一商户货款没及时取出，找到后喜极而泣 郑州暴雨后",
+            "heat_value": 1234808902,
+            "landing_type": 2,
+            "image": "http://f7.baidu.com/it/u=250298371,1500578351&fm=222&app=108&f=JPEG",
+            "show_tag": "荐",
+            "title_prefix": "",
+            "duration": "00:13",
+            "source": "映象网",
+            "link": "https://sv.baidu.com/videoui/page/videoland?context=%7B%22nid%22%3A%22sv_6471767789255095065%22%2C%22sourceFrom%22%3A%22bjh%22%7D",
+            "cmd": {
+                "mode": "-1",
+                "url": "https://sv.baidu.com/videoui/page/videoland?pd=subscribe&srchid=51441638430665889501564&context=%7B%22nid%22%3A%22sv_6471767789255095065%22%2C%22sourceFrom%22%3A%22bjh%22%7D"
+            }
+        },
+        {
+            "id": "news_9475274896671416807",
+            "title": "广州2名医务人员确诊新冠 初步推断意外暴露造成感染的可能性较大",
+            "heat_value": 482,
+            "landing_type": 0,
+            "image": "http://gimg1.baidu.com/searchbox_feed/app=2001&g=4n&n=0&q=85&refer=http%3A%2F%2Fwww.baidu.com&size=w_1024&src=http%3A%2F%2Ff10.baidu.com%2Fit%2Fu%3D114775855%2C145150401%26fm%3D30%26app%3D106%26f%3DJPEG%3Fw%3D640%26h%3D360%26s%3DE550EC3319DED4C840E501D2020090B1?sec=0&t=acdf1c212e65d7b20e45080c85a69ea6",
+            "show_tag": "沸",
+            "title_prefix": "subject",
+            "duration": "",
+            "source": "红星新闻",
+            "link": "https://feed.baidu.com/feed/data/mdpage/mdpage?tag=8&id=7126",
+            "cmd": "baiduboxapp://v1/easybrowse/open?append=1&barcolor=00000000&isimmersive=immersive&layoutfullscreen=1&newbrowser=1&newwindow=0&simple=1&toolbaricons=%7B%22ids%22%3A%5B%222%22%2C%223%22%5D%2C%22toolids%22%3A%5B%222%22%2C%223%22%5D%7D&upgrade=1&url=https%3A%2F%2Ffeed.baidu.com%2Ffeed%2Fdata%2Fmdpage%2Fmdpage%3Ftag%3D8%26id%3D7126"
+        },
+        {
+            "id": "sv_2769311048588542406",
+            "title": "0基础学PS设计直播课",
+            "heat_value": 1223244808902,
+            "landing_type": 2,
+            "image": "http://pics4.baidu.com/feed/a1ec08fa513d269745699996afa2cafc4216d820.jpeg?token=a7211ad2e38fea09ea6d5bf511bbecad",
+            "show_tag": "",
+            "title_prefix": "playback",
+            "duration": "",
+            "source": "PS药丸君",
+            "link": "http://mbd.baidu.com/webpage?type=live&action=liveshow&room_id=3981988295",
+            "cmd": {
+                "mode": "2",
+                "url": "baiduboxapp://v14/live/enterRoom?upgrade=0&params=%7B%22roomId%22%3A%223981988295%22%2C%22screen%22%3A%221%22%2C%22source%22%3A%7B%22livefrom%22%3A%22zhuantiye%22%2C%22liveinvoke%22%3A%220%22%2C%22livesource%22%3A%22zhuantiye%22%7D%7D"
+            }
+        },
+        {
+            "id": "sv_15754901561858221388",
+            "title": "正直播：东京奥运会闭幕式 夏季奥运正式进入2024巴黎时间",
+            "heat_value": 12244808902,
+            "landing_type": 4,
+            "image": "http://contentcms-bj.cdn.bcebos.com/cmspic/656e2add0251e4a4d74a1f5ea947d036.jpeg?x-bce-process=image/crop,x_0,y_10,w_1150,h_645",
+            "show_tag": "",
+            "title_prefix": "live",
+            "duration": "",
+            "source": "咪咕视频",
+            "link": "http://mbd.baidu.com/webpage?type=live&action=liveshow&room_id=4666990917",
+            "cmd": {
+                "mode": "2",
+                "url": "baiduboxapp://swan/aX76eD4iKPKpp17PpqwTaXQfk8XjxdrK/pages/widget/index?mgdbId=900004768&channelId=0135_CAAAB000902014700000000&pwId=c94ea2dd5ba945c8806e22d9cf95462c&nid=15754901561858221388&bd_room_id=4666990917&_baiduboxapp=%7B%22from%22%3A%221091000410000000%22%2C%22ext%22%3A%7B%22token%22%3A%22swanubc%22%2C%22keyfeed%22%3A%2215754901561858221388%22%7D%7D&callback=_bdbox_js_275&upgrade=0"
+            }
+        },
+        {
+            "id": "sv_543626399426174807",
+            "title": "中国队加油！林书豪录制视频为中国奥运代表团助威",
+            "heat_value": 12244808902,
+            "landing_type": 2,
+            "image": "http://f7.baidu.com/it/u=202295746,3251769499&fm=222&app=108&f=JPEG",
+            "show_tag": "",
+            "title_prefix": "",
+            "duration": "01:07",
+            "source": "光荣之路",
+            "link": "https://sv.baidu.com/videoui/page/videoland?context=%7B%22nid%22%3A%22sv_543626399426174807%22%2C%22sourceFrom%22%3A%22bjh%22%7D",
+            "cmd": {
+                "mode": "-1",
+                "url": "https://sv.baidu.com/videoui/page/videoland?pd=subscribe&srchid=17611638430665889843387&context=%7B%22nid%22%3A%22sv_543626399426174807%22%2C%22sourceFrom%22%3A%22bjh%22%7D"
+            }
+        },
+        {
+            "id": "news_9754020455931446505",
+            "title": "《一起同过窗》之你是温柔的穿堂风，偏偏引山洪",
+            "heat_value": 12244902,
+            "landing_type": 0,
+            "image": "http://gimg1.baidu.com/searchbox_feed/app=2001&g=4n&n=0&q=85&refer=http%3A%2F%2Fwww.baidu.com&size=w_1024&src=http%3A%2F%2Ff12.baidu.com%2Fit%2Fu%3D852409541%2C325357984%26fm%3D173%26app%3D49%26f%3DJPEG%3Fw%3D657%26h%3D370%26s%3D423633C562FC4730C71D6417030050D2?sec=0&t=46ac29794d154080f68c21b36c80d3e5",
+            "show_tag": "商",
+            "title_prefix": "",
+            "duration": "",
+            "source": "一个的的的普通人生活的日常",
+            "link": "https://mbd.baidu.com/newspage/data/landingshare?context=%7B%22nid%22%3A%22news_9754020455931446505%22%2C%22sourceFrom%22%3A%22bjh%22%7D&pageType=1",
+            "cmd": "baiduboxapp://v1/easybrowse/hybrid?append=1&ch_url=https%3A%2F%2Fmbd.baidu.com%2Fnewspage%2Fdata%2Flandingreact%3FpageType%3D2%26sourceFrom%3Drelate%26nid%3Dnews_9754020455931446505&commentInfo=%7B%22topic_id%22%3A%221083000037813418%22%2C%22opentype%22%3A%222%22%7D&context=%7B%22content_sign%22%3A%2216785048617968671043%22%2C%22ext%22%3A%7B%22innersource_id%22%3A%22%22%2C%22original_status%22%3A%221%22%2C%22author_level%22%3A%22low%22%2C%22audit_type%22%3A%220000000000000010%22%2C%22spd_shop%22%3A0%2C%22stype%22%3A%22%22%2C%22spos%22%3A0%2C%22ext_info%22%3Anull%7D%2C%22news_type%22%3A%22baijiahao%22%2C%22nid%22%3A%22news_9754020455931446505%22%2C%22sid%22%3A%22%22%7D&first_image=http%3A%2F%2Ff10.baidu.com%2Fit%2Fu%3D3843651111%2C2100855694%26fm%3D173%26app%3D49%26f%3DJPEG%3Fw%3D640%26h%3D421%26s%3D4551AB6486CE0555C16C3D880300A090%26access%3D215967316&newbrowser=1&slog=%7B%22from%22%3A%22feed%22%2C%22nid%22%3A%229754020455931446505%22%2C%22type%22%3A%22time%22%2C%22source%22%3A%22pic_text%22%2C%22page%22%3A%22pic_text%22%2C%22ext%22%3A%7B%22gr_ext%22%3A%7B%22innersource_id%22%3A%22%22%2C%22original_status%22%3A%221%22%2C%22author_level%22%3A%22low%22%2C%22audit_type%22%3A%220000000000000010%22%2C%22spd_shop%22%3A0%2C%22stype%22%3A%22%22%2C%22spos%22%3A0%2C%22ext_info%22%3Anull%7D%2C%22source%22%3A%22%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%E4%BA%BA%E7%94%9F%E6%B4%BB%E7%9A%84%E6%97%A5%E5%B8%B8%22%7D%7D&style=%7B%22showtitlebar%22%3A%220%22%2C%22showtoolbar%22%3A%221%22%2C%22toolbaricons%22%3A%7B%22toolids%22%3A%5B%221%22%2C%222%22%2C%223%22%5D%7D%2C%22menumode%22%3A%222%22%2C%22menuitem%22%3A%7B%7D%7D&tpl_id=landing_app.html&upgrade=1"
+        },
+        {
+            "id": "dt_5122133695491901232",
+            "title": "吴京影史票房第一人位置是保不住了，王宝强和刘昊然必定会凭借#唐人街探案3# 的强大票房成为这个春节档赢家和影史新赢家，一下超过了黄渤和沈腾实现了二连跳。 至于沈腾的累计票房则追赶无望，虽说#你好李焕英# 口碑占尽优势，但预测票房也才25亿左右，沈腾现在147.77亿的票房和25亿的预测票房合计也不是王宝强刘昊然的对手，这个春节档成就的还真是王宝强和刘昊然。",
+            "heat_value": 1224402,
+            "landing_type": 1,
+            "image": "http://t11.baidu.com/it/u=2544287815,3929553087&fm=173&app=49&f=JPEG?w=652&h=366&s=2ABB7685561B4DD8568C307F0300504B",
+            "show_tag": "沸",
+            "title_prefix": "",
+            "duration": "",
+            "source": "呃呃呃",
+            "link": "https://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5122133695491901232&sourceFrom=pc_zhuanti",
+            "cmd": "baiduboxapp://v1/easybrowse/hybrid?append=1&ch_url=https%3A%2F%2Fmbd.baidu.com%2Fnewspage%2Fdata%2Fdtlandingreact%3FpageType%3D2%26nid%3Ddt_5122133695491901232%26sourceFrom%3Dfeed&commentInfo=%7B%22opentype%22%3A%222%22%2C%22source%22%3A%22ugc%22%2C%22topic_id%22%3A%221020000038992042%22%7D&context=%7B%22nid%22%3A%22dt_5122133695491901232%22%2C%22sourceFrom%22%3A%22feed%22%7D&first_image=http%3A%2F%2Ff12.baidu.com%2Fit%2Fu%3D3597874058%2C895710076%26fm%3D173%26app%3D49%26f%3DJPEG%3Fw%3D652%26h%3D403%26s%3D8A9B7F855E5A41D8568C307F0300106B%26access%3D215967316&newbrowser=1&style=%7B%22showtitlebar%22%3A%220%22%2C%22showtoolbar%22%3A%221%22%2C%22toolbaricons%22%3A%7B%22toolids%22%3A%5B%221%22%2C%222%22%2C%223%22%5D%7D%2C%22menumode%22%3A%222%22%2C%22menuitem%22%3A%7B%7D%7D&tpl_id=landing_app.html&upgrade=1"
+        }
+    ]
+}

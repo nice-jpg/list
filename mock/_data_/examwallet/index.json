@@ -1,0 +1,39 @@
+{
+    "errno": "0",
+    "errmsg": "success",
+    "data": {
+        "is_login": true,
+        "has_more": true,
+        "title": "我的钱包",
+        "total": "10.01",
+        "my_assets": {
+            "text": "去提现",
+            "cmd": "__CMD{我的资产}__"
+        },
+        "list": [{
+            "id": "sv_123",
+            "title": "视频标题",
+            "status": "0",
+            "image": "__IMG__",
+            "price": "1元"
+        },{
+            "id": "sv_123",
+            "title": "视频标题",
+            "status": "",
+            "image": "__IMG__",
+            "price": "1元"
+        },{
+            "id": "sv_123",
+            "title": "视频标题",
+            "status": "1",
+            "image": "__IMG__",
+            "price": "1元"
+        },{
+            "id": "sv_123",
+            "title": "视频标题",
+            "status": "2",
+            "image": "__IMG__",
+            "price": "1元"
+        }]
+    }
+ }

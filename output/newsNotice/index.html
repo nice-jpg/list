@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>{{title}}</title>
+    <script>
+        (function (doc, win) {
+            var dummy = doc.createElement('_').style;
+            dummy.width = '1vw';
+            if (dummy.width) {
+                return;
+            }
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) {
+                        return;
+                    }
+                    docEl.style.fontSize = (clientWidth / 20) + 'px';
+                };
+            recalc();
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html.android {
+            font-size: 90px;
+        }
+    </style>
+    <script>
+        try {
+            var ua = navigator.userAgent.toLocaleLowerCase();
+            if (/android/i.test(ua)) {
+                document.documentElement.classList.add('android');
+            }
+        } catch (e) {
+            console.log(e);
+        }
+    </script>
+</head>
+<body>
+<div id="app">
+    <div id="ssr-content">
+    </div>
+</div>
+<script>
+    try {
+        window.sortsData = {{{sortsData}}};
+    } catch (e) {
+        window.sortsData = {};
+    }
+</script>
+<script type="text/javascript" src="/newsNotice.js" defer></script></body>
+</html>

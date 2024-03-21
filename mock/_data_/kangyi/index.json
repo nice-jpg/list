@@ -1,0 +1,17 @@
+{
+  "error": 0,
+  "data": {
+    "widget": {
+      "widget_title": "添加疫情消息到桌面",
+      "background": "https://b.bdstatic.com/searchbox/icms/searchbox/img/kangyihead_light.png",
+      "background_night": "https://b.bdstatic.com/searchbox/icms/searchbox/img/kangyihead_night.png",
+      "background_dark": "https://b.bdstatic.com/searchbox/icms/searchbox/img/kangyihead_dark.png",
+      "button_icon": "https://b.bdstatic.com/app/feedserver/tts/sdkvoice/6289c290b53cc.png",
+      "button_icon_night": "https://b.bdstatic.com/app/feedserver/tts/sdkvoice/6289c2a4ad103.png",
+      "button_icon_dark": "https://b.bdstatic.com/app/feedserver/tts/sdkvoice/6289c2c2349c6.png",
+      "button_text": "放到桌面",
+      "widget_cmd": "baiduboxapp://openwidget/addOpenWidget?params=%7B%22openWidgetID%22%3A151570861551941%2C%22from%22%3A%22alading%22%2C%22config%22%3A%7B%22statistic%22%3A%7B%7D%2C%22params%22%3A%7B%22province%22%3A%22%E5%8C%97%E4%BA%AC%E5%B8%82%22%2C%22city%22%3A%22%E5%8C%97%E4%BA%AC%E5%B8%82%22%2C%22from%22%3A%22feed%22%7D%7D%7D"
+    },
+    "tabs": []
+  }
+}

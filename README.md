@@ -1,0 +1,2 @@
+- yarn start:client
+- 访问热榜页面: http://xxx.baidu.com:端口号/client/rebang?city_code=131
